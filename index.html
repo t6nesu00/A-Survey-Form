@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<h1 id="title">Survey Form</h1>
+	<div class="container">
+		<p id="description">This is a smaple Survey Form created to do sample survey.</p>
+	<form id="survey-form">
+		<div class="row">
+			<div class="col1">
+				<label id="name-label">*Name:</label>	
+			</div>
+			<div class="col2">
+				<input type="text" name="your_name" placeholder="Enter your name" required id="name">		
+			</div>
+				
+		</div>
+		<div class="row">
+			<div class="col1">
+				<label id="email-label">*Email:</label>	
+			</div>
+			<div class="col2">
+				<input type="email" name="emailAdd" placeholder="Enter your Email" required id="email"><br>		
+			</div>
+		</div>
+		<div class="row">
+			<div class="col1">
+				<label id="number-label">*Age:</label>	
+			</div>
+			<div class="col2">
+				<input type="number" name="your_age" min="18" max="45" placeholder="Age" id="number"><br>	
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col1">
+				<label>Select the optoin for current status:</label>	
+			</div>
+			<div class="col2">
+				<select id="dropdown">
+					<option hidden="">Select an option</option>
+					<option value="student">Student</option>
+					<option value="employed">Employed</option>
+					<option value="unemployed">Unemployed</option>
+					<option value="business-man">Business Man</option>
+			</select>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col1">
+				<label>Your Hobbies:</label>		
+			</div>
+			<div class="col2">
+				<input type="radio" name="hobby" value="Reading">Reading<br>
+				<input type="radio" name="hobby" value="Playing">Playing<br>
+				<input type="radio" name="hobby" value="Cooking">Cooking<br>
+				<input type="radio" name="hobby" value="Movies">Movies<br>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col1">
+				<label>What do you like most in FCC:</label>
+			</div>
+			<div class="col2">
+				<select>
+					<option hidden="">Select an option</option>
+					<option>Challenges</option>
+					<option>Projects</option>
+					<option>Community</option>
+					<option>Open Source</option>
+				</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col1">
+				<label>Things that is interesting to you <br>(Check all that apply):</label>
+			</div>
+			<div class="col2">
+				<input type="checkbox" name="interest" value="vehicleone">Biking<br>
+				<input type="checkbox" name="interest" value="vehicletwo">Driving<br>
+				<input type="checkbox" name="interest" value="vehiclethree">Boating<br>
+
+				<input type="checkbox" name="interest" value="vehicleone">Politics<br>
+				<input type="checkbox" name="interest" value="vehicletwo">Literature<br>
+				<input type="checkbox" name="interest" value="vehiclethree">Histry<br>
+				<input type="checkbox" name="interest" value="vehicleone">Social<br>
+				<input type="checkbox" name="interest" value="vehicletwo">Health Science<br>
+				<input type="checkbox" name="interest" value="vehiclethree">Finance<br>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col1">
+				<label>Any comments:</label>		
+			</div>
+			<div class="col2">
+        <textarea rows="4" cols="50" name="comment" form="usrform">
+Enter text here...</textarea><br>
+			</div>
+		</div>
+		<button type="submit" class="btn btn-primary" id="submit">Submit</button>	
+	</form>	
+	</div>
+</body>
+</html>
